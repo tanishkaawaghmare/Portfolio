@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanishka Waghmare | VLSI Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      /* New Base Text Color: Light Cyan */
+      color: #e0f7fa; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      position: relative;
+      overflow-x: hidden;
+      /* Added a subtle dark background in case image fails */
+      background-color: #0a192f; 
+    }
+
+    /* Blurred background image */
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Increased blur and opacity slightly */
+      filter: blur(5px);
+      opacity: 0.7; 
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      /* New Card Background: Dark Blue/Slate, semi-transparent */
+      background: rgba(10, 25, 47, 0.85); 
+      padding: 25px 40px;
+      border-radius: 20px;
+      /* New Border Color: Tech Teal */
+      border: 1px solid #00bcd4;
+      /* New Shadow: Glowing Cyan */
+      box-shadow: 0 5px 25px rgba(0, 200, 255, 0.15); 
+      margin-bottom: 50px;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      /* New Border: Bright Teal */
+      border: 4px solid #4dd0e1;
+      /* New Shadow: Cyan Glow */
+      box-shadow: 0 0 20px rgba(77, 208, 225, 0.5); 
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      /* New Heading Color: White */
+      color: #ffffff; 
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-size: 1.1rem;
+      /* New Subheading Color: Lighter Cyan */
+      color: #b2ebf2; 
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    section {
+      /* New Card Background: Dark Blue/Slate, semi-transparent */
+      background: rgba(10, 25, 47, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      /* New Shadow: Muted Cyan Glow */
+      box-shadow: 0 6px 25px rgba(0, 150, 200, 0.15);
+      flex: 1;
+      min-width: 350px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #004d40; /* Subtle dark teal border */
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      /* New Hover Shadow: Brighter Cyan Glow */
+      box-shadow: 0 10px 30px rgba(0, 200, 255, 0.25);
+    }
+
+    h3 {
+      /* New Section Heading: Pale Gold/Yellow */
+      color: #ffeb99; 
+      margin-bottom: 15px;
+      /* New Border: Accent Teal */
+      border-bottom: 2px solid #4dd0e1; 
+      display: inline-block;
+      padding-bottom: 5px;
+      font-weight: 600;
+    }
+
+    p, li {
+      /* New Text Color: Light Cyan */
+      color: #e0f7fa; 
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    .contact-section {
+      /* New Card Background: Dark Blue/Slate, semi-transparent */
+      background: rgba(10, 25, 47, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      /* New Shadow: Muted Cyan Glow */
+      box-shadow: 0 6px 25px rgba(0, 150, 200, 0.15);
+      width: 100%;
+      max-width: 900px;
+      margin-top: 40px;
+      text-align: center;
+      border: 1px solid #004d40;
+    }
+
+    .contact-info a {
+      /* New Link Color: Bright Teal */
+      color: #4dd0e1; 
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+      /* New Link Hover: Pale Gold */
+      color: #ffeb99; 
+    }
+
+    footer {
+      margin-top: 25px;
+      /* New Footer Text: Muted Cyan */
+      color: #b2ebf2; 
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .accent-bar {
+      width: 80px;
+      height: 4px;
+      /* New Gradient: Teal to Gold */
+      background: linear-gradient(90deg, #4dd0e1, #b2ebf2, #ffeb99);
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="bg-image" src="chip-bg.png" alt="VLSI Background">
+
+  <header>
+    <img src="profile.jpg" alt="Tanishka Waghmare">
+    <div>
+      <h1>Tanishka Waghmare</h1>
+      <div class="accent-bar"></div>
+      <h2>Third Year B.Tech (ENTC) | PCCOE Pune</h2>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <section>
+      <h3>About Me</h3>
+      <p>
+        I am a passionate and detail-oriented Electronics and Telecommunication Engineering student at 
+        <strong>Pimpri Chinchwad College of Engineering (PCCOE)</strong>, Pune, currently in my Third Year. 
+        My interests revolve around the <strong>VLSI and Semiconductor domain</strong> — particularly 
+        in chip design, logic optimization, and embedded hardware development.
+      </p>
+      <p>
+        I love exploring how digital systems are built from logic gates to microarchitectures. 
+        I have a creative mindset, a strong analytical approach, and a desire to bridge 
+        theoretical knowledge with practical innovation.
+      </p>
+    </section>
+
+    <section>
+      <h3>Academic Highlights</h3>
+      <ul>
+        <li>Completed course on <strong>Digital Circuits and Logic Design</strong> with distinction.</li>
+        <li>Designed combinational and sequential circuits using logic simplification techniques.</li>
+        <li>Worked on simulation projects using <em>Proteus, Multisim, and Logisim</em>.</li>
+        <li>Strong foundation in Boolean algebra, CMOS design principles, and timing analysis.</li>
+        <li>Currently learning <strong>Verilog HDL</strong> for digital system design automation.</li>
+      </ul>
+    </section>
+  </div>
+
+
+  <div class="contact-section">
+    <h3>Contact Details</h3>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:tanishkaawaghmare@gmail.com">tanishkaawaghmare@gmail.com</a></p>
+      <p>Phone: +91-8208492854</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/Tanishka Anil Waghmare</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Tanishka Waghmare | Portfolio</p>
+  </footer>
+
+</body>
+</html>
